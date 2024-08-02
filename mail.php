@@ -3,9 +3,6 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-use PHPMailer\PHPMailer\SMTP;
-
-use PHPMailer\PHPMailer\Exception\SMTPException;
 
 require 'vendor/autoload.php';
 
@@ -27,7 +24,7 @@ class mail{
             $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
             $mail->SMTPAuth = true; // Enable SMTP authentication
             $mail->Username = 'thushanmadusanka456@gmail.com'; // SMTP username
-            $mail->Password = 'thushan2001'; // SMTP password
+            $mail->Password = ''; // SMTP password
             $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587; // TCP port to connect to
 
